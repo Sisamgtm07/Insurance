@@ -108,6 +108,9 @@ h6 {
 }
 
 .rating {
+  color: #E2DFDF;
+}
+.rating .checked {
   color: #ffc700;
 }
 
@@ -304,6 +307,48 @@ input::placeholder {
 #qna .read-btn:hover {
   background-color: #b51919;
   color: #fff;
+}
+
+/*==============================
+        TESTIMONIAL SECTION
+=================================*/
+#testimonials .testimonial-title p {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #625f5f;
+}
+#testimonials .slider-item {
+  margin-right: 20px;
+}
+#testimonials .slider-item img {
+  max-width: 70%;
+  border-radius: 50%;
+}
+#testimonials .slider-item .name {
+  font-size: 14px;
+  font-weight: 600;
+}
+#testimonials .slider-item .id {
+  font-weight: bold;
+  color: #625f5f;
+}
+#testimonials .slider-item .rating {
+  font-size: 12px;
+  margin-top: 15px;
+}
+#testimonials .social-icons {
+  text-align: right;
+  margin-bottom: 10px;
+}
+#testimonials .social-icons i {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 7px 7px;
+  margin-right: 5px;
+}
+#testimonials .social-icons .fa-facebook-f {
+  padding: 6px 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
