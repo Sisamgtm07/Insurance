@@ -1,0 +1,159 @@
+//=========COLORS==============
+$white: #fff;
+$black: #000;
+$grey: #625f5f;
+$yellow: #ffc700;
+$red: #b51919;
+$dark-red: #9b1e1e;
+$border-color: #e5e5e5;
+
+//=======FONT FAMILY============
+$roboto: "Roboto", sans-serif;
+$pt-serif: "PT Serif", serif;
+$lobster: "Lobster Two", cursive;
+$pt-sans: "PT Sans", sans-serif;
+$lato: "Lato", sans-serif;
+
+@import "reset";
+
+body {
+  font-family: $roboto;
+}
+
+@mixin btn {
+  background-color: $red;
+  border: 2px solid $red;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.5s ease;
+  border-radius: 0;
+  &:hover {
+    background-color: $white;
+    color: $red;
+  }
+}
+
+/*==============================
+        GENERAL CSS
+=================================*/
+span,
+p,
+a {
+  font-size: 12px;
+}
+h6 {
+  font-size: 14px;
+}
+.rating {
+  color: $yellow;
+}
+input {
+  &::placeholder {
+    font-size: 12px;
+  }
+}
+/*==============================
+        TOPBAR SECTION
+=================================*/
+#topbar {
+  background-color: $grey;
+  color: $white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 32px;
+  .top-item {
+    float: right;
+    .top-links {
+      color: $white;
+      margin-right: 19px;
+      text-align: center;
+    }
+    .social-icons i {
+      color: $white;
+      margin-right: 5px;
+    }
+  }
+}
+
+/*==============================
+        HEADER SECTION
+=================================*/
+#header {
+  h2 {
+    font-size: 40px;
+    font-family: $lobster;
+    font-weight: bold;
+    color: $black;
+  }
+  .nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .support {
+    color: $black;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+/*==============================
+        HERO SECTION
+=================================*/
+#hero {
+  .btn {
+    @include btn;
+  }
+  .insurance {
+    a {
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: $black;
+      }
+    }
+
+    .insurance-item {
+      border: 1px solid $border-color;
+      padding: 10px 0;
+      border-radius: 5px;
+    }
+  }
+
+  .zipcode-tabs {
+    p {
+      font-size: 14px;
+    }
+    .nav-item {
+      color: $black;
+      font-weight: 500;
+      font-size: 14px;
+      &:hover {
+        border-color: transparent;
+      }
+    }
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+      background-color: transparent;
+      border-color: transparent transparent $border-color;
+      border-bottom: 3px solid $red !important;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    input[type="submit"] {
+      box-shadow: 0px 7px $dark-red;
+    }
+    .btn {
+      @include btn;
+      &:hover {
+        background-color: $red;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,232 @@
+/*==============================
+        RESET CSS
+=================================*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration-line: none;
+}
+a:hover {
+  text-decoration-line: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*==============================
+        GENERAL CSS
+=================================*/
+span,
+p,
+a {
+  font-size: 12px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.rating {
+  color: #ffc700;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+/*==============================
+        TOPBAR SECTION
+=================================*/
+#topbar {
+  background-color: #625f5f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 32px;
+}
+#topbar .top-item {
+  float: right;
+}
+#topbar .top-item .top-links {
+  color: #fff;
+  margin-right: 19px;
+  text-align: center;
+}
+#topbar .top-item .social-icons i {
+  color: #fff;
+  margin-right: 5px;
+}
+
+/*==============================
+        HEADER SECTION
+=================================*/
+#header h2 {
+  font-size: 40px;
+  font-family: "Lobster Two", cursive;
+  font-weight: bold;
+  color: #000;
+}
+#header .nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+#header .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+}
+#header .support {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/*==============================
+        HERO SECTION
+=================================*/
+#hero .btn {
+  background-color: #b51919;
+  border: 2px solid #b51919;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.5s ease;
+  border-radius: 0;
+}
+#hero .btn:hover {
+  background-color: #fff;
+  color: #b51919;
+}
+#hero .insurance a p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #000;
+}
+#hero .insurance .insurance-item {
+  border: 1px solid #e5e5e5;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+#hero .zipcode-tabs p {
+  font-size: 14px;
+}
+#hero .zipcode-tabs .nav-item {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+}
+#hero .zipcode-tabs .nav-item:hover {
+  border-color: transparent;
+}
+#hero .zipcode-tabs .nav-tabs .nav-item.show .nav-link,
+#hero .zipcode-tabs .nav-tabs .nav-link.active {
+  background-color: transparent;
+  border-color: transparent transparent #e5e5e5;
+  border-bottom: 3px solid #b51919 !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+#hero .zipcode-tabs input[type="submit"] {
+  box-shadow: 0px 7px #9b1e1e;
+}
+#hero .zipcode-tabs .btn {
+  background-color: #b51919;
+  border: 2px solid #b51919;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.5s ease;
+  border-radius: 0;
+}
+#hero .zipcode-tabs .btn:hover {
+  background-color: #fff;
+  color: #b51919;
+}
+#hero .zipcode-tabs .btn:hover {
+  background-color: #b51919;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
