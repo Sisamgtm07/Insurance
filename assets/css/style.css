@@ -320,6 +320,10 @@ input::placeholder {
 #testimonials .slider-item {
   margin-right: 20px;
 }
+#testimonials .slider-item:focus {
+  border: none;
+  outline: none;
+}
 #testimonials .slider-item img {
   max-width: 70%;
   border-radius: 50%;
@@ -342,13 +346,68 @@ input::placeholder {
 }
 #testimonials .social-icons i {
   background-color: #000;
+  border: 2px solid #000;
   color: #fff;
   border-radius: 50%;
   padding: 7px 7px;
   margin-right: 5px;
+  cursor: pointer;
+}
+#testimonials .social-icons i:hover {
+  border: 2px solid #000;
+  color: #000;
+  background-color: #fff;
 }
 #testimonials .social-icons .fa-facebook-f {
   padding: 6px 8px;
+}
+
+/*==============================
+        MEGAFOOTER  SECTION
+=================================*/
+#mega-footer .footer-item h6 {
+  font-weight: bold;
+}
+#mega-footer .footer-item .footer-list a {
+  color: #000;
+  font-size: 12px;
+}
+#mega-footer .footer-item .footer-list a:hover {
+  color: #625f5f;
+}
+#mega-footer .footer-item .follow {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+#mega-footer .footer-item i {
+  margin-right: 10px;
+}
+#mega-footer .footer-item .social-icons i {
+  background-color: #000;
+  border: 2px solid #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 7px 7px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+#mega-footer .footer-item .social-icons i:hover {
+  border: 2px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+#mega-footer .footer-item .social-icons .fa-facebook-f {
+  padding: 6px 8px;
+}
+
+/*==============================
+       FOOTER
+=================================*/
+#footer {
+  background-color: #625f5f;
+  padding: 10px 40px;
+  color: #fff;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
