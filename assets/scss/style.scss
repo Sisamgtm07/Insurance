@@ -1,6 +1,7 @@
 //=========COLORS==============
 $white: #fff;
 $black: #000;
+$light-grey:rgb(145, 142, 142);
 $grey: #625f5f;
 $yellow: #ffc700;
 $red: #b51919;
@@ -53,6 +54,16 @@ input {
   &::placeholder {
     font-size: 12px;
   }
+}
+.sub-head{
+    color:$light-grey;
+    font-weight: bold;
+    text-align: center;
+}
+.head{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
 }
 /*==============================
         TOPBAR SECTION
@@ -156,4 +167,34 @@ input {
       }
     }
   }
+}
+
+
+/*==============================
+        BRANDS SECTION
+=================================*/
+.brand{
+    background-color: $grey;
+    .brands-item{
+        a{
+            color: $white;
+            i{
+               font-size: 50px;
+               margin-right: 30px;
+            }
+        }
+    }
+}
+
+
+/*==============================
+        COMPARE SECTION
+=================================*/
+#compare{
+    .compare-item{
+        i{
+            font-size: 30px;
+        }
+    }
+
 }

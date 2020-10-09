@@ -115,6 +115,18 @@ input::placeholder {
   font-size: 12px;
 }
 
+.sub-head {
+  color: #918e8e;
+  font-weight: bold;
+  text-align: center;
+}
+
+.head {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5px;
+}
+
 /*==============================
         TOPBAR SECTION
 =================================*/
@@ -227,6 +239,27 @@ input::placeholder {
 #hero .zipcode-tabs .btn:hover {
   background-color: #b51919;
   color: #fff;
+}
+
+/*==============================
+        BRANDS SECTION
+=================================*/
+.brand {
+  background-color: #625f5f;
+}
+.brand .brands-item a {
+  color: #fff;
+}
+.brand .brands-item a i {
+  font-size: 50px;
+  margin-right: 30px;
+}
+
+/*==============================
+        COMPARE SECTION
+=================================*/
+#compare .compare-item i {
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
