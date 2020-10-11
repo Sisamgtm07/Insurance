@@ -4,12 +4,13 @@ $black: #000;
 $light-grey: rgb(145, 142, 142);
 $grey: #625f5f;
 $yellow: #ffc700;
-$uncheck:#E2DFDF;
+$uncheck: #e2dfdf;
 $red: #b51919;
 $dark-red: #9b1e1e;
 $border-color: #e5e5e5;
-$blue:#023955;
-$background:#02537c;
+$blue: #023955;
+$secondary: #f62;
+$primary: #02537c;
 
 //=======FONT FAMILY============
 $roboto: "Roboto", sans-serif;
@@ -39,24 +40,24 @@ body {
   }
 }
 
-@mixin  social-icon {
-    i{
-        background-color: $black;
-        border: 2px solid $black;
-        color: $white;
-        border-radius: 50%;
-        padding: 7px 7px;
-        margin-right: 5px;
-        cursor: pointer;
-        &:hover{
-            border: 2px solid $black;
-            color: $black;
-            background-color: $white;
-        }
+@mixin social-icon {
+  i {
+    background-color: $black;
+    border: 2px solid $black;
+    color: $white;
+    border-radius: 50%;
+    padding: 7px 7px;
+    margin-right: 5px;
+    cursor: pointer;
+    &:hover {
+      border: 2px solid $black;
+      color: $black;
+      background-color: $white;
     }
-    .fa-facebook-f{
-        padding: 6px 8px;
-    }
+  }
+  .fa-facebook-f {
+    padding: 6px 8px;
+  }
 }
 
 /*==============================
@@ -72,8 +73,8 @@ h6 {
 }
 .rating {
   color: $uncheck;
-  .checked{
-      color: $yellow;
+  .checked {
+    color: $yellow;
   }
 }
 input {
@@ -118,7 +119,7 @@ input {
         HEADER SECTION
 =================================*/
 #header {
-  background-color: $background;
+  background-color: $primary;
   h2 {
     font-size: 40px;
     font-family: $lobster;
@@ -200,7 +201,7 @@ input {
         BRANDS SECTION
 =================================*/
 .brand {
-  background-color: $grey;
+  background-color: $blue;
   .brands-item {
     a {
       color: $white;
@@ -212,6 +213,90 @@ input {
   }
 }
 
+/*==============================
+          HOW IT WORKS
+=================================*/
+#work {
+  position: relative;
+  .work-item {
+    margin-top: 30px;
+  }
+  ul {
+    margin-top: 40px;
+    h6 {
+      font-size: 20px;
+    }
+    li {
+      margin-bottom: 35px;
+      list-style-type: none;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 0.75em;
+        height: 0.75em;
+        border-radius: 50%;
+        background: $primary;
+        margin: 5px 0 0 -30px;
+      }
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .read-btn {
+    @include btn;
+    padding: 5px 20px;
+    box-shadow: 0px 7px $dark-red;
+    &:hover {
+      background-color: $red;
+      color: $white;
+    }
+  }
+  .slider-work {
+    .slider-item {
+      border: 1px solid $border-color;
+      border-radius: 5px;
+      &:focus {
+        outline: none;
+      }
+    }
+    img {
+      padding-left: 20px;
+    }
+    a {
+      color: $black;
+      &:focus {
+        outline: none;
+      }
+      .price {
+        font-size: 25px;
+        font-weight: 600;
+      }
+      .month {
+        color: $light-grey;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .title {
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 10px;
+      }
+      .circle {
+        padding-left: 12px;
+        color: $uncheck;
+        font-size: 6px;
+        .checked {
+          color: $yellow;
+        }
+        i {
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+}
 /*==============================
         COMPARE SECTION
 =================================*/
@@ -263,18 +348,18 @@ input {
 /*==============================
         RIGHT PROTECTION
 =================================*/
-#protection{
+#protection {
   position: relative;
-  .protect-item{
+  .protect-item {
     margin-right: 10%;
   }
-  .border-top{
+  .border-top {
     border-top: 3px solid $black !important;
     border-left: 3px solid $black;
     border-right: 3px solid $black;
     padding: 25px;
   }
-  .border-bottom{
+  .border-bottom {
     border-bottom: 3px solid $black !important;
     border-left: 3px solid $black;
     border-right: 3px solid $black;
@@ -287,76 +372,73 @@ input {
     background-color: #242424;
     top: 43%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 50px;
-    } 
-    .sub-head{
-      text-transform: uppercase;
+  }
+  .sub-head {
+    text-transform: uppercase;
+  }
+  .read-btn {
+    @include btn;
+    padding: 5px 20px;
+    box-shadow: 0px 7px $dark-red;
+    &:hover {
+      background-color: $red;
+      color: $white;
     }
-    .read-btn {
-      @include btn;
-      padding: 5px 20px;
-      box-shadow: 0px 7px $dark-red;
-      &:hover {
-        background-color: $red;
-        color: $white;
-      }
-    }
-
+  }
 }
 /*==============================
         TESTIMONIAL SECTION
 =================================*/
-#testimonials{
-    .testimonial-title{
-        p{
-            text-transform: uppercase;
-           font-weight: 500;
-           color: $grey;
-        }
+#testimonials {
+  .testimonial-title {
+    p {
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $grey;
     }
-    .slider-item{
-        margin-right: 20px;
-        &:focus{
-            border:none;
-            outline: none;
-        }
-        img{
-            max-width: 70%;
-            border-radius: 50%;
-
-        }
-        .name{
-            font-size: 14px;
-            font-weight: 600;
-        }
-        .id{
-            font-weight: bold;
-            color: $grey;
-
-        }
-        .rating{
-            font-size: 12px;
-            margin-top: 15px;
-        }
+  }
+  .slider-item {
+    margin-right: 20px;
+    &:focus {
+      border: none;
+      outline: none;
     }
-    .social-icons{
-        text-align: right;
-        margin-bottom: 10px;
-        @include social-icon;
+    img {
+      max-width: 70%;
+      border-radius: 50%;
     }
+    .name {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .id {
+      font-weight: bold;
+      color: $grey;
+    }
+    .rating {
+      font-size: 12px;
+      margin-top: 15px;
+    }
+  }
+  .social-icons {
+    text-align: right;
+    margin-bottom: 10px;
+    @include social-icon;
+  }
 }
 
 /*==============================
      GET INSURANCE SECTION
 =================================*/
-#get-insurance{
-  input:focus{
+#get-insurance {
+  input:focus {
     box-shadow: 0 0 $white;
   }
-  .btn{
+  .btn {
     @include btn;
-    &:hover{
+    &:hover {
       background-color: $dark-red;
       color: $white;
     }
@@ -365,40 +447,39 @@ input {
 /*==============================
         MEGAFOOTER  SECTION
 =================================*/
-#mega-footer{
-    .footer-item{
-      h6{
-        font-weight: bold;
-      }
-      .footer-list{
-        a{
-          color: $black;
-          font-size: 12px;
-          &:hover{
-            color: $grey;
-          }
+#mega-footer {
+  .footer-item {
+    h6 {
+      font-weight: bold;
+    }
+    .footer-list {
+      a {
+        color: $black;
+        font-size: 12px;
+        &:hover {
+          color: $grey;
         }
       }
-      .follow{
-          font-weight: bold;
-          text-transform: capitalize;
-      }
-      i{
-        margin-right: 10px;
-      }
-      .social-icons{
-        @include social-icon;
-      }
     }
-  
+    .follow {
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    i {
+      margin-right: 10px;
+    }
+    .social-icons {
+      @include social-icon;
+    }
   }
-    
+}
+
 /*==============================
        FOOTER
 =================================*/
-#footer{
-    background-color: $blue;
-    padding: 10px 40px;
-    color: $white;
-    font-weight: 600;
+#footer {
+  background-color: $blue;
+  padding: 10px 40px;
+  color: $white;
+  font-weight: 600;
 }

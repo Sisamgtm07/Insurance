@@ -108,7 +108,7 @@ h6 {
 }
 
 .rating {
-  color: #E2DFDF;
+  color: #e2dfdf;
 }
 .rating .checked {
   color: #ffc700;
@@ -251,7 +251,7 @@ input::placeholder {
         BRANDS SECTION
 =================================*/
 .brand {
-  background-color: #625f5f;
+  background-color: #023955;
 }
 .brand .brands-item a {
   color: #fff;
@@ -259,6 +259,99 @@ input::placeholder {
 .brand .brands-item a i {
   font-size: 50px;
   margin-right: 30px;
+}
+
+/*==============================
+          HOW IT WORKS
+=================================*/
+#work {
+  position: relative;
+}
+#work .work-item {
+  margin-top: 30px;
+}
+#work ul {
+  margin-top: 40px;
+}
+#work ul h6 {
+  font-size: 20px;
+}
+#work ul li {
+  margin-bottom: 35px;
+  list-style-type: none;
+}
+#work ul li:before {
+  content: "";
+  position: absolute;
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 50%;
+  background: #02537c;
+  margin: 5px 0 0 -30px;
+}
+#work ul p {
+  font-size: 14px;
+}
+#work .read-btn {
+  background-color: #b51919;
+  border: 2px solid #b51919;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.5s ease;
+  border-radius: 0;
+  padding: 5px 20px;
+  box-shadow: 0px 7px #9b1e1e;
+}
+#work .read-btn:hover {
+  background-color: #fff;
+  color: #b51919;
+}
+#work .read-btn:hover {
+  background-color: #b51919;
+  color: #fff;
+}
+#work .slider-work .slider-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+#work .slider-work .slider-item:focus {
+  outline: none;
+}
+#work .slider-work img {
+  padding-left: 20px;
+}
+#work .slider-work a {
+  color: #000;
+}
+#work .slider-work a:focus {
+  outline: none;
+}
+#work .slider-work a .price {
+  font-size: 25px;
+  font-weight: 600;
+}
+#work .slider-work a .month {
+  color: #918e8e;
+  font-size: 18px;
+  font-weight: 500;
+}
+#work .slider-work a .title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+#work .slider-work a .circle {
+  padding-left: 12px;
+  color: #e2dfdf;
+  font-size: 6px;
+}
+#work .slider-work a .circle .checked {
+  color: #ffc700;
+}
+#work .slider-work a .circle i {
+  margin-right: 3px;
 }
 
 /*==============================
