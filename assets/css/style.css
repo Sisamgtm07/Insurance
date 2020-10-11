@@ -134,7 +134,7 @@ input::placeholder {
         TOPBAR SECTION
 =================================*/
 #topbar {
-  background-color: #625f5f;
+  background-color: #023955;
   color: #fff;
   font-size: 12px;
   font-weight: 500;
@@ -156,11 +156,14 @@ input::placeholder {
 /*==============================
         HEADER SECTION
 =================================*/
+#header {
+  background-color: #02537c;
+}
 #header h2 {
   font-size: 40px;
   font-family: "Lobster Two", cursive;
   font-weight: bold;
-  color: #000;
+  color: #fff;
 }
 #header .nav-item:not(:last-child) {
   margin-right: 20px;
@@ -168,9 +171,10 @@ input::placeholder {
 #header .nav-link {
   font-size: 14px;
   font-weight: 700;
+  color: #fff;
 }
 #header .support {
-  color: #000;
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
 }
@@ -484,7 +488,7 @@ input::placeholder {
        FOOTER
 =================================*/
 #footer {
-  background-color: #625f5f;
+  background-color: #023955;
   padding: 10px 40px;
   color: #fff;
   font-weight: 600;
