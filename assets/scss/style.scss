@@ -344,6 +344,21 @@ input {
 }
 
 /*==============================
+     GET INSURANCE SECTION
+=================================*/
+#get-insurance{
+  input:focus{
+    box-shadow: 0 0 $white;
+  }
+  .btn{
+    @include btn;
+    &:hover{
+      background-color: $dark-red;
+      color: $white;
+    }
+  }
+}
+/*==============================
         MEGAFOOTER  SECTION
 =================================*/
 #mega-footer{
