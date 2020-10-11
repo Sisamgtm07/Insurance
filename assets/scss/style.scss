@@ -257,6 +257,50 @@ input {
 }
 
 /*==============================
+        RIGHT PROTECTION
+=================================*/
+#protection{
+  position: relative;
+  .protect-item{
+    margin-right: 10%;
+  }
+  .border-top{
+    border-top: 3px solid $black !important;
+    border-left: 3px solid $black;
+    border-right: 3px solid $black;
+    padding: 25px;
+  }
+  .border-bottom{
+    border-bottom: 3px solid $black !important;
+    border-left: 3px solid $black;
+    border-right: 3px solid $black;
+    padding: 25px;
+  }
+  .protect-title:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #242424;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    } 
+    .sub-head{
+      text-transform: uppercase;
+    }
+    .read-btn {
+      @include btn;
+      padding: 5px 20px;
+      box-shadow: 0px 7px $dark-red;
+      &:hover {
+        background-color: $red;
+        color: $white;
+      }
+    }
+
+}
+/*==============================
         TESTIMONIAL SECTION
 =================================*/
 #testimonials{

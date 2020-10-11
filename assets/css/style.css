@@ -310,6 +310,61 @@ input::placeholder {
 }
 
 /*==============================
+        RIGHT PROTECTION
+=================================*/
+#protection {
+  position: relative;
+}
+#protection .protect-item {
+  margin-right: 10%;
+}
+#protection .border-top {
+  border-top: 3px solid #000 !important;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+  padding: 25px;
+}
+#protection .border-bottom {
+  border-bottom: 3px solid #000 !important;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+  padding: 25px;
+}
+#protection .protect-title:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #242424;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+#protection .sub-head {
+  text-transform: uppercase;
+}
+#protection .read-btn {
+  background-color: #b51919;
+  border: 2px solid #b51919;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.5s ease;
+  border-radius: 0;
+  padding: 5px 20px;
+  box-shadow: 0px 7px #9b1e1e;
+}
+#protection .read-btn:hover {
+  background-color: #fff;
+  color: #b51919;
+}
+#protection .read-btn:hover {
+  background-color: #b51919;
+  color: #fff;
+}
+
+/*==============================
         TESTIMONIAL SECTION
 =================================*/
 #testimonials .testimonial-title p {
