@@ -253,6 +253,7 @@ input {
       color: $white;
     }
   }
+  
   .slider-work {
     .slider-item {
       border: 1px solid $border-color;
@@ -483,3 +484,5 @@ input {
   color: $white;
   font-weight: 600;
 }
+
+@import 'motor';
