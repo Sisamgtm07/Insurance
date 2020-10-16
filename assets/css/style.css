@@ -777,5 +777,56 @@ input::placeholder {
   font-size: 12px;
   color: #023955;
 }
+.article .share {
+  margin-top: 70px;
+}
+.article .share span {
+  border: 1px solid #023955;
+  border-radius: 50px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  color: #023955;
+}
+.article .share i {
+  color: #fff;
+  background-color: #023955;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+/*==============================
+     MOTOR-FOOTER SECTION
+=================================*/
+.motor-footer {
+  background-color: #023955;
+}
+.motor-footer a, .motor-footer span, .motor-footer p, .motor-footer h5 {
+  color: #fff;
+}
+.motor-footer .support-image img {
+  margin-bottom: 20px;
+}
+.motor-footer ul, .motor-footer li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.motor-footer .contact-icon i {
+  background-color: #fff;
+  padding: 10px 12px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #023955;
+  margin-right: 5px;
+  transition: .5s all ease;
+}
+.motor-footer .contact-icon i:hover {
+  background-color: #ff9c05;
+  color: #fff;
+}
+.motor-footer .copyright {
+  color: #006ea5;
+}
 
 /*# sourceMappingURL=style.css.map */
