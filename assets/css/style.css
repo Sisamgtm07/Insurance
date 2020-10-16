@@ -648,5 +648,71 @@ input::placeholder {
 .motor-nav .nav-link, .motor-nav .support {
   color: #023955 !important;
 }
+.motor-nav .share, .motor-nav .call {
+  background-color: #ff9c05;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+.motor-nav .call {
+  background-color: #023955;
+  margin-right: 0;
+}
+
+/*==============================
+     HERO SECTION
+=================================*/
+.hero .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+.hero .caption {
+  padding-top: 80px;
+}
+.hero .caption .title {
+  font-weight: 600;
+  color: #023955;
+}
+.hero .caption .sub-title {
+  color: #023955;
+  letter-spacing: 2px;
+}
+.hero .container {
+  padding-right: 0;
+  margin-right: 0;
+}
+.hero .form {
+  position: relative;
+  background-image: linear-gradient(to right, #65b2d8, #023955);
+  border-radius: 200px 0 0 200px;
+  padding-left: 100px;
+  margin: 20px 0;
+}
+.hero .form h5 {
+  text-transform: uppercase;
+  color: #023955;
+}
+.hero .form .col-6 .row {
+  border-radius: 7px;
+  box-shadow: 0 2px 4px grey;
+}
+.hero .form i {
+  margin-top: 4px;
+}
+.hero .btn {
+  background-color: #ff9c05;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 5px;
+}
+.hero .image-right {
+  position: absolute;
+  top: -16%;
+}
 
 /*# sourceMappingURL=style.css.map */
