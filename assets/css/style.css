@@ -587,6 +587,18 @@ input::placeholder {
   font-weight: 600;
 }
 
+.title {
+  font-weight: 600;
+  color: #023955;
+  font-size: 2rem;
+}
+
+.sub-title {
+  color: #023955;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
 /*==============================
        TOP-NAV
 =================================*/
@@ -670,15 +682,7 @@ input::placeholder {
   padding: 0;
 }
 .hero .caption {
-  padding-top: 80px;
-}
-.hero .caption .title {
-  font-weight: 600;
-  color: #023955;
-}
-.hero .caption .sub-title {
-  color: #023955;
-  letter-spacing: 2px;
+  padding-top: 40px;
 }
 .hero .container {
   padding-right: 0;
@@ -713,6 +717,20 @@ input::placeholder {
 .hero .image-right {
   position: absolute;
   top: -16%;
+}
+
+/*==============================
+     HERO SECTION
+=================================*/
+.banner .sub-title {
+  margin-left: 10px;
+}
+.banner .slider-item {
+  margin-right: 20px;
+}
+.banner .slick-dots li button:before {
+  font-size: 12px;
+  color: #023955;
 }
 
 /*# sourceMappingURL=style.css.map */

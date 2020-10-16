@@ -8,6 +8,17 @@ $orange: #ff9c05;
 $grey:grey;
 $lightblue:#65b2d8;
 
+.title{
+    font-weight: 600;
+    color: $blue;
+    font-size: 2rem;
+}
+.sub-title{
+    color: $blue;
+    letter-spacing: 2px;
+    font-size: 2rem;
+
+}
 /*==============================
        TOP-NAV
 =================================*/
@@ -97,15 +108,7 @@ $lightblue:#65b2d8;
         padding: 0;
     }
     .caption{
-        padding-top: 80px;
-        .title{
-            font-weight: 600;
-            color: $blue;
-        }
-        .sub-title{
-            color: $blue;
-            letter-spacing: 2px;
-        }
+        padding-top: 40px;
     }
     .container{
         padding-right: 0;
@@ -140,5 +143,21 @@ $lightblue:#65b2d8;
     .image-right{
         position: absolute;
         top: -16%;
+    }
+}
+
+/*==============================
+     HERO SECTION
+=================================*/
+.banner{
+    .sub-title{
+        margin-left: 10px;
+    }
+    .slider-item{
+        margin-right: 20px;
+    }
+    .slick-dots li button:before {
+        font-size: 12px;
+        color: $blue;
     }
 }
