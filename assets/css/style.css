@@ -740,4 +740,42 @@ input::placeholder {
   max-width: 60%;
 }
 
+/*==============================
+     ARTICLE SECTION
+=================================*/
+.article .sub-title {
+  margin-left: 10px;
+}
+.article .slider-item {
+  position: relative;
+  margin-right: 20px;
+}
+.article .slider-item .label {
+  background-color: #ff9c05;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  font-size: 10px;
+  position: absolute;
+  top: 8%;
+  left: 3%;
+  border-radius: 50px;
+}
+.article .slider-item a {
+  color: #023955;
+}
+.article .slider-item .article-title {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.article .slider-item .date, .article .slider-item .view {
+  margin-right: 10px;
+  color: grey;
+}
+.article .slick-dots li button:before {
+  font-size: 12px;
+  color: #023955;
+}
+
 /*# sourceMappingURL=style.css.map */
