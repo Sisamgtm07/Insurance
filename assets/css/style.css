@@ -733,4 +733,11 @@ input::placeholder {
   color: #023955;
 }
 
+/*==============================
+     PARTNER SECTION
+=================================*/
+.partner img {
+  max-width: 60%;
+}
+
 /*# sourceMappingURL=style.css.map */
