@@ -605,6 +605,7 @@ input::placeholder {
 #top-nav {
   background-color: #023955;
   color: #fff;
+  padding: 0 60px 0 40px;
 }
 #top-nav ul li, #top-nav a, #top-nav span {
   color: #fff;
@@ -698,13 +699,73 @@ input::placeholder {
 .hero .form h5 {
   text-transform: uppercase;
   color: #023955;
+  font-size: 18px;
 }
 .hero .form .col-6 .row {
   border-radius: 7px;
+  margin: 0;
   box-shadow: 0 2px 4px grey;
 }
 .hero .form i {
   margin-top: 4px;
+}
+.hero .form .modal-btn {
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+}
+.hero .form .modal-btn:focus, .hero .form .modal-btn:active {
+  border: none;
+  outline: none;
+}
+.hero .form .modal-header {
+  background-color: #023955;
+}
+.hero .form .modal-header h5 {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.hero .form .modal-header .close {
+  color: #fff;
+  opacity: 1;
+}
+.hero .form .modal-header .close:active, .hero .form .modal-header .close:focus, .hero .form .modal-header .close:visited {
+  outline: none;
+}
+.hero .form .modal-header button span {
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 0 0 0 #fff;
+}
+.hero .form .modal-body nav {
+  margin: 0;
+  padding: 0;
+  background-color: #94b7e6;
+  margin: -16px;
+}
+.hero .form .modal-body .nav-tabs {
+  border: 0;
+}
+.hero .form .modal-body a {
+  color: #023955;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.hero .form .modal-body #tabs .nav-tabs .nav-item.show .nav-link, .hero .form .modal-body .nav-tabs .nav-link.active {
+  color: #fff;
+  border: 0;
+  background-color: #02537c;
+  border-color: none;
+  font-weight: 550;
+  border-radius: 0;
+  margin: -1px 0 1px 0;
+}
+.hero .form .modal-body #tabs .nav-tabs .nav-item.show .nav-link, .hero .form .modal-body .nav-tabs .nav-link:hover {
+  border: none;
+}
+.hero .form .brand input {
+  width: 50%;
 }
 .hero .btn {
   background-color: #ff9c05;
@@ -716,11 +777,11 @@ input::placeholder {
 }
 .hero .image-right {
   position: absolute;
-  top: -16%;
+  top: -18.5%;
 }
 
 /*==============================
-     HERO SECTION
+     BANNER SECTION
 =================================*/
 .banner .sub-title {
   margin-left: 10px;
