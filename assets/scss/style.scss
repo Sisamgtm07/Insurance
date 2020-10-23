@@ -11,6 +11,7 @@ $border-color: #e5e5e5;
 $blue: #023955;
 $secondary: #f62;
 $primary: #02537c;
+$orange: #ff8c08;
 
 //=======FONT FAMILY============
 $roboto: "Roboto", sans-serif;
@@ -26,17 +27,19 @@ body {
 }
 
 @mixin btn {
-  background-color: $red;
-  border: 2px solid $red;
+  background-color: $orange;
+  border: 2px solid $orange;
   color: $white;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
+  border-radius: 50px;
+  padding: 8px 40px;
   transition: 0.5s ease;
-  border-radius: 0;
+  border-radius: 50px;
   &:hover {
     background-color: $white;
-    color: $red;
+    color: $orange;
   }
 }
 
@@ -166,8 +169,10 @@ input {
   }
 
   .zipcode-tabs {
+    box-shadow: 0 0 10px $border-color;
+    border-radius: 8px;
     p {
-      font-size: 14px;
+      font-size: 14px;  
     }
     .nav-item {
       color: $black;
@@ -181,18 +186,13 @@ input {
     .nav-tabs .nav-link.active {
       background-color: transparent;
       border-color: transparent transparent $border-color;
-      border-bottom: 3px solid $red !important;
+      border-bottom: 3px solid $orange !important;
       font-size: 14px;
       font-weight: bold;
     }
     .btn {
       @include btn;
-      border: none;
-      box-shadow: 0px 7px $dark-red;
-      &:hover {
-        background-color: $red;
-        color: $white;
-      }
+      padding: -1px 40px;
     }
   }
 }
@@ -232,10 +232,10 @@ input {
       &:before {
         content: "";
         position: absolute;
-        width: 0.75em;
-        height: 0.75em;
+        width: 1em;
+        height: 1em;
         border-radius: 50%;
-        background: $primary;
+        background: $orange;
         margin: 5px 0 0 -30px;
       }
     }
@@ -246,12 +246,6 @@ input {
 
   .read-btn {
     @include btn;
-    padding: 5px 20px;
-    box-shadow: 0px 7px $dark-red;
-    &:hover {
-      background-color: $red;
-      color: $white;
-    }
   }
   
   .slider-work {
@@ -337,12 +331,6 @@ input {
   }
   .read-btn {
     @include btn;
-    padding: 5px 20px;
-    box-shadow: 0px 7px $dark-red;
-    &:hover {
-      background-color: $red;
-      color: $white;
-    }
   }
 }
 
@@ -381,12 +369,6 @@ input {
   }
   .read-btn {
     @include btn;
-    padding: 5px 20px;
-    box-shadow: 0px 7px $dark-red;
-    &:hover {
-      background-color: $red;
-      color: $white;
-    }
   }
 }
 /*==============================
@@ -439,10 +421,8 @@ input {
   }
   .btn {
     @include btn;
-    &:hover {
-      background-color: $dark-red;
-      color: $white;
-    }
+    border-radius: 0;
+    padding: 5px 40px;
   }
 }
 /*==============================
